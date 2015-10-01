@@ -1,2 +1,2 @@
 # AngularUIRouterDemo.github.io
-AngularUI Router Demo for Thinkful.com
+AngularUI Router Demo for [Thinkful](https://www.thinkful.com/)
