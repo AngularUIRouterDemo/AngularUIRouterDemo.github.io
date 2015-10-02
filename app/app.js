@@ -16,17 +16,17 @@ angular.module('MyUIRouteApp', ['ui.router', 'ui.bootstrap.dropdown'])
         url: "/shop",
         templateUrl: "app/states/shop.html",
       })
-      .state('shop.macbooks', { // This is a nested child view of the "shop" state above ^^^
-        url: "/macbooks",
-        templateUrl: "app/states/macbooks.html",
-        controller: "productsCtrl",
-        controllerAs: 'mac' // If you are using the controllerAs syntax you can declare it in the router
-      })
-      .state('shop.iphones', { // This is also a nested child view of the "shop" state above ^^^
-        url: "/iphones",
-        templateUrl: "app/states/iphones.html",
-        controller: "productsCtrl as phone" // You can also declare the controllerAs syntax like this
-      })
+        .state('shop.macbooks', { // This is a nested child view of the "shop" state above ^^^
+          url: "/macbooks",
+          templateUrl: "app/states/macbooks.html",
+          controller: "productsCtrl",
+          controllerAs: 'mac' // If you are using the controllerAs syntax you can declare it in the router
+        })
+        .state('shop.iphones', { // This is also a nested child view of the "shop" state above ^^^
+          url: "/iphones",
+          templateUrl: "app/states/iphones.html",
+          controller: "productsCtrl as phone" // You can also declare the controllerAs syntax like this
+        })
     // Redirect back to the home screen if a unmatched URL is entered
     $urlRouterProvider.otherwise("/");
   });
